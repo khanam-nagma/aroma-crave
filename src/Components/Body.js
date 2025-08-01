@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../Utils/useOnlineStatus";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import {GET_RESTAURANTS_API} from '../Utils/constants'
 const swiggyUrl = encodeURIComponent(
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 );
@@ -16,9 +17,7 @@ const Body = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(
-        `https://thingproxy.freeboard.io/fetch/${swiggyUrl}`
-      );
+      const response = await fetch(GET_RESTAURANTS_API);
       const json = await response.json();
       const restList =
         json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
