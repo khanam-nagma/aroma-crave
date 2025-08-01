@@ -8,7 +8,7 @@ Aroma Crave is a modern React web application that displays a list of restaurant
 
 ## 🌐 Live Demo
 
-[🚀 View Live Demo](https://your-demo-link.com)
+🚀 [View Live Demo](https://aroma-crave.netlify.app/)
 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5f1121f9-3289-4786-9ecc-a4cbac501193/deploy-status)](https://app.netlify.com/projects/aroma-crave/deploys)
