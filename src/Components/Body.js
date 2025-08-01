@@ -23,8 +23,6 @@ const Body = () => {
         json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants || [];
       //    console.log(json.data.cards?.[6].card.card.gridElements.infoWithStyle.restaurants);
-      console.log(json?.data?.cards?.[2]?.card?.card);
-      console.log(restList, "restList");
       setListOfRestaurant(restList);
       setFilteredRestauarant(restList);
     } catch (error) {
@@ -36,12 +34,9 @@ const Body = () => {
   //  if(listOfRestuarant.length === 0){
   //     return
   //  }
-  console.log(listOfRestaurant.length);
   // listOfRestaurant.forEach(res =>{
   //   console.log(JSON.stringify(res, null, 2), "RES")
   // })
-  for (let i = 0; i < listOfRestaurant.length; i++)
-    console.log(listOfRestaurant[i]?.name);
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) {
